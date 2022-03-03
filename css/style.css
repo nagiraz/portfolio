@@ -190,3 +190,29 @@ body {
     color: var(--pure-white);
     background-color: var(--accent);
 }
+
+.footer-link {
+    display: flex;
+    justify-content: center;
+}
+
+.link {
+    text-decoration: none;
+   border-radius: 5px;
+   color: var(--accent);
+   background-color: var(--pure-white);
+   background-image: -webkit-radial-gradient(#fdbcef 2px, rgba(255, 0, 0, 0) 2px);
+   background-image: -o-radial-gradient(#fdbcef 2px, rgba(255, 0, 0, 0) 2px);
+   background-image: radial-gradient(#fdbcef 2px, transparent 2px);
+   background-size: 12px;
+   box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+}
+
+.link:hover {
+    background-size: 16px 16px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+}
