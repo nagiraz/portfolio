@@ -1,6 +1,6 @@
 :root {
     --accent: #813b70;
-    --accent: #864668;
+    --accent-light: #c083a3;
     --pure-white:#fff;
 }
 
@@ -26,6 +26,15 @@ body {
     margin: 0 auto;
     padding: 0 15px;
    
+}
+
+.section {
+    padding: 60px 0;
+}
+
+.section-title {
+    text-transform: uppercase;
+    text-align: center;
 }
 
 .header {
@@ -72,64 +81,112 @@ body {
     transition: background-color 0.4s;
 }
 
-.menu-link:hover {
-    background-color: #db9fbf;
-}
-
 /* .menu-link:hover {
+    background-color: #db9fbf;
+} */
+
+.menu-link:hover {
     background-color: var(--accent-light);
-} */
+} 
 
 
-/* html {
-    box-sizing: border-box;
+
+.intro {
+    padding: 4em 0;
 }
 
-*,
-*:before,
-*:after {
-    box-sizing: inherit;
+.intro-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
 }
 
-body {
-    font-family: 'Open Sans', sans-serif;
+.intro-left {
+    width: 35%;
+}
+
+.intro-img {
+    width: 350px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+.intro-right {
+    width: 50%;
+}
+
+.intro-right h1,
+.intro-right h3 {
+    margin: 0 0 10px;
+}
+
+.contacts {
+    margin-bottom: 60px;
+}
+
+.contacts ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
     margin: 0;
-}
-
-.container {
-    width: 1140px;
-    margin: 0 auto;
-    
-}
-
-.header a{
-    color: #fff;
-    text-decoration: none;
-}
-
-.header-inner {
-    padding: 10px 0;
-    background-color: #174180;
-    color: #fff;
-}
-
-.header-logo {
-    float: left;
-}
-
-.menu {
     padding: 0;
-    margin: 0;
     list-style: none;
-    font-size: 0;
 }
 
-.menu-item {
-    display: inline-block;
+.contacts li {
+    text-align: center;
 }
 
-.menu-link {
-    text-decoration: uppercase;
-    padding: 0 15px;
-    font-size: 16px;
-} */
+.skills {
+    color: var(--pure-white);
+    background-color: var(--accent);
+}
+
+.skills ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.skills li {
+    padding: 10px 15px;
+    background-color: var(--accent-light);
+    border-radius: 4px;
+}
+
+.code-example {
+    text-align: center;
+}
+
+.code-example p {
+    font-style: italic;
+}
+
+.code-example b {
+    font-style: normal;
+}
+
+.code-example pre {
+    width: 55%;
+    margin: 0 auto;
+    text-align: left;
+    font-size: 1.2em;
+    color: var(--pure-white);
+    background-color: var(--accent);
+    border-radius: 8px;
+}
+
+.languages ul{
+   margin: 0 0 10px; 
+}
+
+.education {
+    color: var(--pure-white);
+    background-color: var(--accent);
+}
